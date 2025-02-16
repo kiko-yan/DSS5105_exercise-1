@@ -2,16 +2,13 @@
 
 This project generates a customizable checkerboard pattern using Python, NumPy, and Matplotlib. The colormap was adjusted in a dedicated Git branch and later merged into the main branch using Git best practices.
 
-## Installation & Dependencies
-Ensure the following are installed before running the script:
-Python 3.x,NumPy,Matplotlib
-
-Install dependencies with:
+## Installation 
+Ensure you have **Python 3.x** installed. Then, install the required dependencies:
 ```sh
 pip install numpy matplotlib
 ```
 
-# Executing the Program
+# Running the project
 1. Clone the repository:
    ```sh
    git clone https://github.com/kiko-yan/DSS5105_exercise-1.git
@@ -26,39 +23,18 @@ pip install numpy matplotlib
    ```   
 4. A checkerboard pattern will be displayed.
 
-# Git Workflow
-1. Initialize Git:
-   ```sh
-   git init
-   ```
-2. Commit the initial script:
-   ```sh
-   git add checkerboard.py
-   
-   git commit -m "Initial commit with checkerboard generator"
-   ```
-3. Connect to GitHub:
-   ```sh
-   git remote add origin https://github.com/kiko-yan/DSS5105_exercise-1.git
-   
-   git push -u origin main
-   ```
+
 # Colormap Modification (Bonus)
-1. Create and switch to a new branch:
-   ```sh
-   git checkout -b change-colormap
-   ```
-2. Modify `checkerboard.py` and update the colormap:
-  Change:
-   ```python
-   plt.imshow(checkerboard, cmap="gray", interpolation="nearest")
-   To
-   plt.imshow(checkerboard, cmap="plasma", interpolation="nearest")
-   
-3. Save changes and push to GitHub:
-   ```sh
-   git add checkerboard.py
-   git commit -m "Updated colormap from gray to plasma"
-   git push origin change-colormap
-   ```
-4. Open a Pull Request on GitHub and merge the changes into main.
+A new branch change-colormap was created to modify the color scheme of the checkerboard.
+To switch the colormap from `gray` to `plasma`, modify the following line in `checkerboard.py`:
+```sh
+plt.imshow(checkerboard, cmap="plasma", interpolation="nearest")
+```
+Changes were committed and merged into `main` via a Pull Request.
+
+# Git Workflow
+This project followed Git best practices, including branching, committing, and merging via Pull Requests.
+The repository follows best Git practices:
+- Changes were committed in a structured manner.
+- A new branch was created for colormap modification and merged via a Pull Request.
+- The final version is available on the main branch.
