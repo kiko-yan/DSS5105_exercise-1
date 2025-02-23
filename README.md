@@ -1,5 +1,6 @@
 # DSS5105 Exercise 1 - Checkerboard
 
+## Description 
 This project generates a customizable checkerboard pattern using Python, NumPy, and Matplotlib. The colormap was adjusted in a dedicated Git branch and later merged into the main branch using Git best practices.
 
 ## Installation 
